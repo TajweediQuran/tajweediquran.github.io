@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Tajweedi Quran</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style2.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Tajweedi Quran</h3>
+            </div>
+			<input type="text" id="myInput" onkeyup="filter(this)" placeholder="Search for Surah.." title="Type in a surah">
+            <ul class="list-unstyled components" id="myUL">
+              <li><a href="javascript:selectDropdownValue(2);">Al-Fatiha الفاتحہ in Juz 1</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(3);">Al-Baqarah البقرۃ  in Juz 1, 2 and 3.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(46);">Ale-Imran آل عمران  in Juz 3 and 4.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(70);">An-Nisa ٓالنسا  in Juz 4, 5 and 6.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(97);">Al-Maeda المائدۃ  in Juz 6 and 7.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(116);">Al-Anaam الانعام  in Juz 7 and 8.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(137);">Al-Araf الاعراف in Juz 8 and 9.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(160);">Al-Anfal الانفال  in Juz 9 and 10.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(169);">Al-Taubah التوبۃ in Juz 10 and 11.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(188);">Yunus یونس  in Juz 11.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(200);">Hud ھود  in Juz 11 and 12.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(213);">Yusuf یوسف  in Juz 12 and 13.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(225);">Ar-Rad الرعد  in Juz 13.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(231);">Ibrahim ابراھیم  in Juz 13. </a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(236);">Al-Hijr الحجر  in Juz 13 and 14.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(241);">An-Nahl النحل  in Juz 14.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(255);">Al-Isra الاسرا  in Juz 15.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(265);">Al-Kahf الکھف  in Juz 15 and 16.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(276);">Maryam مریم  in Juz 16.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(282);">Taha طٰہٰ  in Juz 16.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(291);">Al-Anbiya الانبیآ  in Juz 17.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(300);">Al-Hajj الحج  in Juz 17.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(309);">Al-Mumenoon المومنون  in Juz 18.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(316);">An-Noor النور  in Juz 18.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(325);">Al-Furqan الفرقان  in Juz 18 and 19.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(331);">Ash-Shuara الشعرآ  in Juz 19.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(340);">An-Naml النمل  in Juz 19 and 20.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(348);">Al-Qasas القصص  in Juz 20.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(358);">Al-Ankaboot  العنکبوت  in Parah Number 20 and 21.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(365);">Ar-Room الروم  in Juz 21.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(371);">Luqman لقمان  in Juz 21.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(374);">As-Sajda السجدۃ  in Juz 21.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(377);">Al-Ahzab الاحزاب  in Juz 21 and 22.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(386);">Saba سبا  in Juz 22.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(392);">Fatir فاطر  in Juz 22.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(397);">Ya-Seen یٰس in Juz 22 and 23.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(402);">As-Saaffat   الصافات  in Juz 23.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(409);">Sad  ص in Juz 23.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(413);">Az-Zumar الزمر in Juz 23 and 24. </a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(421);">Ghafir غافر in Juz 24. </a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(430);">Fussilat فصلت  in Juz 24 and 25. </a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(435);">Ash-Shura الشوری  in Juz 25. </a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(441);">Az-Zukhruf الزخرف in Juz 25.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(447);">Ad-Dukhan الدخان in Juz 25.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(449);">Al-Jathiya الجاثیۃ in Juz 25.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(453);">Al-Ahqaf الاحقاف in Juz 26.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(457);">Muhammad محمد in Juz 26.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(461);">Al-Fath الفتح in Juz 26.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(464);">Al-Hujraat الحجرات in Juz 26.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(467);">Qaf ق in Juz 26.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(469);">Adh-Dhariyat الذاریات  in Juz 26 and 27.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(476);">At-tur الطور in Juz 27.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(474);">An-Najm النجم in Juz 27.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(472);">Al-Qamar القمر in Juz 27.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(479);">Ar-Rahman الرحٰمن  in Juz 27.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(486);">Al-Waqia الواقعہ in Juz 27.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(485);">Al-Hadid الحدید in Juz 27.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(489);">Al-Mujadila المجادلہ  in Juz 28.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(492);">Al-Hashr الحشر  in Juz 28.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(496);">Al-Mumtahana الممتحنۃ in Juz 28.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(498);">As-Saff الصف  in Juz 28.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(500);">Al-Jumua الجمعۃ  in Juz 28.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(501);">Al-Munafiqoon المنافقون  in Juz 28.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(503);">At-Taghabun التغابن  in Juz 28.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(505);">At-Talaq الطلاق in Juz 28.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(507);">At-Tahrim التحریم in Juz 28.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(509);">Al-Mulk الملک in Juz 29.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(511);">Al-Qalam القلم in Juz 29.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(513);">Al-Haaqqa الحاقۃ  in Juz 29.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(515);">Al-Maarij المعارج in Juz 29.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(517);">Nooh نوح in Juz 29.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(519);">Al-Jinn الجن  in Juz 29.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(521);">Al-Muzzammil المزمل  in Juz 29.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(522);">Al-Muddathir المدثر  in Juz 29.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(524);">Al-Qiyama القیامۃ  in Juz 29.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(525);">Al-Insan  الانسان in Juz 29.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(427);">Al-Mursalat المرثلات in Juz 29.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(429);">An-Naba النبا  in Juz 30.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(530);">An-Naziat النازعات  in Juz 30.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(531);">Abasa عبس in Juz 30.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(533);">At-Takwir التکویر  in Juz 30.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(533);">AL-Infitar الانفطار  in Juz 30.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(534);">Al-Mutaffifin المطففین  in Juz 30.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(534);">Al-Inshiqaq الانشقاق  in Juz 30.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(535);">Al-Burooj البروج  in Juz 30.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(536);">At-Tariq الطارق  in Juz 30.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(537);">Al-Ala الاعلی  in Juz 30.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(538);">Al-Ghashiya الغاشیۃ  in Juz 30.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(538);">Al-Fajr الفجر  in Juz 30.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(539);">Al-Balad البلد  in Juz 30.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(540);">Ash-Shams الشمس  in Juz 30.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(541);">Al-Lail اللیل  in Juz 30.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(541);">Ad-Dhuha الضحی  in Juz 30.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(542);">Ash-Sharh الشرح  in Juz 30.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(542);">At-Tin التین  in Juz 30.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(543);">Al-Alaq العلق  in Juz 30.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(543.);">Al-Qadr القدر  in Juz 30.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(544);">Al-Bayyina البینۃ  in Juz 30.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(544);">Al-Zalzala الزلزلۃ  in Juz 30.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(545);">Al-Adiyaat العادیات  in Juz 30.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(545);">Al-Qaria القارعۃ  in Juz 30.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(545);">At-Takaathur التکاثر  in Juz 30.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(546);">Al-Asr العصر  in Juz 30.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(546);">Al-Humaza الھمزۃ  in Juz 30.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(546);">Al-feel الفیل  in Juz 30.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(547);">Quraish قریش  in Juz 30.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(547);">Al-Maun الماعون  in Juz 30.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(547);">Al-Kauther الکوثر  in Juz 30.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(547);">Al-Kafiroon الکافرون  in Juz 30.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(548);">An-Nasr النصر  in Juz 30.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(548);">Al-Masad المسد  in Juz 30.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(548);">Al-Ikhlaas الاخلاص  in Juz 30.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(549);">Al-Falaq الفلق  in Juz 30.</a></li><li><hr></li>
+<li><a href="javascript:selectDropdownValue(549);">An-Naas الناس  in Juz 30</a></li><li><hr></li>
+            </ul>
+
+            
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Search Quran</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+					
+					
+<select id="pages" onchange="valueSelected(this.value);" style="border-color: #17a2b8;     padding-left: 1em;     background-color: #17a2b8;     color: white;     width: 9em;     height: 2.5em;     border-radius: 0.5em; 	">
+<option selected disabled>Pages</option>
+
+</select>
+                    
+                </div>
+            </nav>
+
+           <div class="w3-center">
+  <div class="w3-section">
+    <button class="w3-button w3-light-grey" onclick="plusDivs(-1)"> Prev</button>
+    <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next </button>
+  </div>
+
+</div>
+
+<div id="container">
+    <div id="navi" class="loader"></div>
+    <div id="quranDiv" class="w3-content" style="max-width:800px">
+	
+	</div>
+</div>
+
+
+<div class="w3-center">
+  <div class="w3-section">
+    <button class="w3-button w3-light-grey" onclick="plusDivs(-1)"> Prev</button>
+    <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next </button>
+  </div>
+  
+</div>
+		   
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+	var slideIndex = 1;
+	var pageIndex =  0;
+	showDivs(slideIndex);
+	
+	
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar, #content').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+		
+		
+		
+		function loadImages(n){
+var img = document.createElement("img");
+img.style.width = '100%';
+img.src = n;
+img.classList.add("mySlides");
+var element = document.getElementById("quranDiv");
+element.appendChild(img);
+}
+
+
+function addParameterToURL(param){
+    url = location.href;
+	
+	var n = url.search("#");
+	if(n>0){
+	url = url.split('#')[0];
+	}
+	
+	var n = url.search("\\?");
+	if(n>0){
+	url = url.split('?')[0];
+	}
+	
+	url += "?" + param + "p";
+    return url;
+	
+}
+
+
+function showPage(n){
+	var p = 0;
+	var iteration = slideIndex;
+	if(n<iteration){
+	for(p = n; p<iteration; p++){
+	 plusDivs(-1);	
+	}
+	}else{
+	showDivs(slideIndex = n);
+	}
+}
+
+function plusDivs(n) {
+  if(slideIndex == 1 && n<0){
+   return;
+  }
+  if(slideIndex == 549 && n>0){
+   return;
+  }
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var x = document.getElementsByClassName("mySlides");
+  var i;
+  if(n > x.length){
+	for(i = x.length+1; i <= n; i++){
+		if(i<1){
+		loadImages("q/Page0001.gif");
+		} else if (i<10) {
+		loadImages("q/Page000"+i+".gif");
+		} else if(i>9 && i<100){
+		loadImages("q/Page00"+i+".gif");
+		} else {
+		loadImages("q/Page0"+i+".gif");
+		}
+	}
+  }
+  document.getElementById("pages").value = n;
+  document.body.scrollTop = document.documentElement.scrollTop = 0;
+  x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  if (n == x.length) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  
+  
+  url = location.href;
+  
+  var q = url.search(n+"p");
+  
+	if(n!=1){
+		if(q<0){
+			window.location.href = addParameterToURL("page="+n);
+				}
+			}
+					
+}
+
+ function filter(element) {
+        var value = $(element).val();
+		value = value.toUpperCase();
+        $("#myUL > li").each(function() {
+            if ($(this).text().toUpperCase().search(value) > -1) {
+                $(this).show();
+            }
+            else {
+                $(this).hide();
+            }
+        });
+    }
+	
+	
+function valueSelected(n)
+{
+    javascript:showPage(n);
+	
+	
+}
+	
+	window.onload = function () {
+    var select = document.getElementById("pages");
+	var j = 1;
+    for(var i = 1; i <= 549; i++) {
+        var option = document.createElement('option');
+        option.text = option.value = i;
+        select.add(option, j);
+		j++;
+    }
+	document.getElementById("navi").style.display = "none";
+	url = location.href;
+	var n = url.search("\\?");
+	if(n>0){
+	url = url.split('=')[1];
+	url = url.split('p')[0];
+	selectDropdownValue(url);
+	}
+	
+	};
+
+function selectDropdownValue(n){
+	document.getElementById("pages").value = n;
+	valueSelected(n);
+}
+
+    </script>
+</body>
+
+</html>
